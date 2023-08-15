@@ -1,24 +1,3 @@
-
-**TODO**: Delete these instructions before you submit your work.
-## Instructions
-
-1. Read Chapters 2 & 3 of [Pro Git][ProGit]. The chapters are short.
-2. Answer these questions using [Markdown format][markdown-cheatsheet] (also [Github Markdown][github-markdown]). 
-3. Place your answers between lines beginning with 3 backquotes, which tells Markdown it should be unformatted text, and write only the commands you would type (**no** shell prompt).  E.g.:
-   ```
-   git status         CORRECT
-   $ git status       WRONG  - you do not type "$"
-   ```
-4. Indent the 3 backquotes so they line up with the question text (3 leading spaces) so Markdown formats you answer as part of the numbered item.
-   Example:
-   ```
-   git init
-   ```  
-5. **Test that your answers are correct!** There is **no excuse** for incorrect answers since you can test your answers by experimentation.      
-6. Verify that your Markdown formatting is correct -- points deducted for bad formatting. VS Code and IntelliJ have markdown previewers. You should also preview it on Github, since Github Markdown is a bit non-standard.
-
-**TODO**: Delete these instructions before you submit your work. Points deducted for each "TODO" in this file.
-
 ## Using Git
 
 [Basics](#basics)    
@@ -38,16 +17,14 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 ## Basics
 
 1. When using Git locally, what are these?  Define each one in a sentence
-   * Staging area -
-   * Working copy -
-   * master -
-   * HEAD -
+   * Staging area - 
+   * Working copy - 
+   * master - 
+   * HEAD - 
 
 2. When you install git on a new machine (or in a new user account) you should perform these 2 git commands to tell git your name and email.  These values are used in commits that you make:
    ```
    # Git configuration commands for a new account
-
-
    ```
 
 3. There are 2 ways to create a local Git repository.  Briefly descibe each one:
