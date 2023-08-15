@@ -17,19 +17,21 @@ In this file, directory paths are written with a forward slash as on MacOS, Linu
 ## Basics
 
 1. When using Git locally, what are these?  Define each one in a sentence
-   * Staging area - 
-   * Working copy - 
-   * master - 
-   * HEAD - 
+   * Staging area - A temporary place to add changed files before commit them to the repository.
+   * Working copy - A local version of the repository files that we are working. We might push it to the remote repository later.
+   * master - master/main is a default branch in a Git repository.
+   * HEAD - A pointer to the current commit.
 
 2. When you install git on a new machine (or in a new user account) you should perform these 2 git commands to tell git your name and email.  These values are used in commits that you make:
    ```
    # Git configuration commands for a new account
+   git config --global user.name "Krittin Setdhavanich "
+   git config --global user.email Jwizzed@outlook.com
    ```
 
-3. There are 2 ways to create a local Git repository.  Briefly descibe each one:
-   - todo: describe first way to create a local repo
-   - todo: describe second way to create a local repo
+3. There are 2 ways to create a local Git repository.  Briefly describe each one:
+   - Initialize a new Git repository by using `git init`
+   - Clone an existing remote repository by using `git clone`
 
 
 ## Adding and Changing Things
