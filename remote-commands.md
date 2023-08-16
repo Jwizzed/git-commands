@@ -36,6 +36,7 @@
    ```
    git remote set-url origin https://hostname/newuser/new-repo-name
    ```
+   
    This situation occurs when:
    - you change the name of a repo on Github
    - you transfer ownership of a Github repo to someone else
