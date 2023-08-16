@@ -48,7 +48,6 @@ test/
     test_a.py
     ...
 ```     
-> TODO: Write the git command to perform each of these:
 
 1. Add README.md and *everything* in the `src` directory to the git staging area.
    ```
@@ -151,7 +150,6 @@ test/
    git log --graph --all --decorate --oneline
    ```
 
-
 3. List all the files in the current branch of the repository:
    ```
    git ls-tree -r HEAD --name-only
@@ -169,21 +167,49 @@ test/
 
 ## Branch and Merge
 
-**TODO**: This section is free-form.  Create 4 numbered items for common branch-and-merge tasks you would like to remember and show the git command to do each one. (You are write *more* than 4 if you want.)
-
-
+1. Assume that the current branch is called `B`, show the command to combine `B` into `A` and change the order of the commits
+   ```
+   git rebase -i A
+   ```
+   
+2. You have made changes to the `A` branch but want to switch to a new branch called `B`. Show the command to switch to `B` while keeping your changes uncommitted.
+   ```
+   git checkout -b B
+   ```
+   
+3. You committed several changes by mistake. Show the command to undo the last 3 commits on main without losing any changes and delete those 3 commits.
+   ```
+   git reset HEAD~3
+   ```
+   
+4. You have several commits and realize the unique commit named `bug` introduces a breaking bug. Show the command to undo only `bug` without undoing other commits.
+   ```
+   git revert bug
+   ```
+   
+5. You have been working on a feature branch called `feature` and are ready to merge it into the `master` branch. Show the command to merge `feature` into `master`. (Assume that there are no conflict)
+   ```
+   git checkout master
+   git merge feature
+   ```
 
 ## Favorites
 
-> TODO: Describe *at least* 1 task that you would like to remember, and the git command(s) to do it.
-
-
+1. You have made commits on a feature branch called `feature`. Then you realized that you don't want the most recent few commits on `feature` branch. Show the command to force move the branch pointer for `feature` back to the commit with hash `qwer132`
+   ```
+   git branch -f feature qwer132
+   ```
+   
+2. You have a feature branch called `feature` with several commits. Show the command to copy/apply 2 commit that have a hash `c29398a` and `93021oc` to `master` branch.
+   ```
+   git checkout master
+   git cherry-pick c29398a 93021oc
+   ```
 
 ---
 ## Resources
 
-> TODO: Add your favorite Git resources (at least 1)
-
+* [Atlassian][atlassian] Github flow cheat sheet
 * [Pro Git Online Book][ProGit] Chapters 2 & 3 contain the essentials. Downloadable e-book is available, too. 
 * [Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
 * [Markdown Cheatsheet][markdown-cheatsheet] summary of Markdown commands.
@@ -200,3 +226,4 @@ Learn Git Visually:
 [VisualizeGit]: http://git-school.github.io/visualizing-git/ "Online tools draws a graph of commits in a repo as you type"
 [markdown-cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [github-markdown]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+[atlassian]: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow 
